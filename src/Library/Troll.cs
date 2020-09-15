@@ -5,7 +5,7 @@ namespace MiddleEarth
 {
     public class Troll
     {
-        public Troll(string name, int health)
+        public Troll(string name)
         {
             this.Name = name;
             this.Health = 150;
@@ -62,6 +62,11 @@ namespace MiddleEarth
         public void RemoveIronArmor(IronArmor ironArmor)
         {
             this.Items.Remove(ironArmor);
+        }
+        public void Heal()
+        {
+            Troll newTroll = new Troll("NewTroll");
+            this.Health = newTroll.Health;
         }
     }
 }
