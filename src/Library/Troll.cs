@@ -45,28 +45,46 @@ namespace MiddleEarth
                 }
             }
         }
-        public ArrayList Items{get;set;}
+        public WoodenHammer Hammer{get;set;}
+        public IronArmor Armor{get;set;}
 
-        public void AddHammer(WoodenHammer hammer)
+        public void ChangeWeapon(WoodenHammer hammer)
         {
-            this.Items.Add(hammer);
+            this.Hammer = hammer;
         }
-        public void RemoveHammer(WoodenHammer hammer)
+        public void RemoveWeapon()
         {
-            this.Items.Remove(hammer);
+            this.Hammer = null;
         }
-        public void AddIronArmor(IronArmor ironArmor)
+        public void ChangeArmor(IronArmor armor)
         {
-            this.Items.Add(ironArmor);
+            this.Armor = armor;
         }
-        public void RemoveIronArmor(IronArmor ironArmor)
+        public void RemoveArmor()
         {
-            this.Items.Remove(ironArmor);
+            this.Armor = null;
         }
         public void Heal()
         {
             Troll newTroll = new Troll("NewTroll");
             this.Health = newTroll.Health;
+        }
+        public int GetAttack()
+        {
+            return this.Hammer.Attack;
+        }
+        public void ReceiveDamage(int damage)
+        {
+            if(this.Armor.Defense >= damage)
+            {
+                this.Armor.Defense -= damage;
+            }
+            else
+            {
+                damage -= this.Armor.Defense;
+                this.Armor.Defense = 0;
+                this.Health -= damage;
+            }
         }
     }
 }
