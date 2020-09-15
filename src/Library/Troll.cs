@@ -46,5 +46,22 @@ namespace MiddleEarth
             }
         }
         public ArrayList Items{get;set;}
+
+        public void AddHammer(WoodenHammer hammer)
+        {
+            this.Items.Add(hammer);
+        }
+        public void RemoveHammer(WoodenHammer hammer)
+        {
+            this.Items.Remove(hammer);
+        }
+        public void AddIronArmor(IronArmor ironArmor)
+        {
+            this.Items.Add(ironArmor);
+        }
+        public void RemoveIronArmor(IronArmor ironArmor)
+        {
+            this.Items.Remove(ironArmor);
+        }
     }
 }

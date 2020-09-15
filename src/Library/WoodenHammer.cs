@@ -1,4 +1,4 @@
-namespace Library
+namespace MiddleEarth
 {
     public class WoodenHammer
     {
