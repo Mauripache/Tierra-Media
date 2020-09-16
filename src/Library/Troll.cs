@@ -1,11 +1,16 @@
 using System;
+using System.Collections;
 
 namespace MiddleEarth
 {
-    class Elf
+    public class Troll
     {
-        public Bow Bow{get;set;}
-        public LeatherArmor Armor{get;set;}
+        public Troll(string name)
+        {
+            this.Name = name;
+            this.Health = 150;
+
+        }
         private string name;
         public string Name
         {
@@ -40,20 +45,18 @@ namespace MiddleEarth
                 }
             }
         }
-        public Elf(string name)
+        public WoodenHammer Hammer{get;set;}
+        public IronArmor Armor{get;set;}
+
+        public void ChangeWeapon(WoodenHammer hammer)
         {
-            this.Health = 100;
-            this.Name = name;
-        }
-        public void ChangeWeapon(Bow bow)
-        {
-            this.Bow = bow;
+            this.Hammer = hammer;
         }
         public void RemoveWeapon()
         {
-            this.Bow = null;
+            this.Hammer = null;
         }
-        public void ChangeArmor(LeatherArmor armor)
+        public void ChangeArmor(IronArmor armor)
         {
             this.Armor = armor;
         }
@@ -63,12 +66,12 @@ namespace MiddleEarth
         }
         public void Heal()
         {
-            Elf newElf = new Elf("Alive Elf");
-            this.Health = newElf.Health;
+            Troll newTroll = new Troll("NewTroll");
+            this.Health = newTroll.Health;
         }
         public int GetAttack()
         {
-            return this.Bow.Attack;
+            return this.Hammer.Attack;
         }
         public void ReceiveDamage(int damage)
         {
