@@ -4,7 +4,7 @@ namespace Test.Library
 {
 
 
-    public class ExampleTest
+    public class WizardTests
     {
 
         [Test]
