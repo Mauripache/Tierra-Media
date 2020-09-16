@@ -2,7 +2,7 @@ using System;
 
 namespace MiddleEarth
 {
-    class Elf
+    public class Elf
     {
         public Bow Bow{get;set;}
         public LeatherArmor Armor{get;set;}

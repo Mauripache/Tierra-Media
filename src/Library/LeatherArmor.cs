@@ -1,6 +1,6 @@
 namespace MiddleEarth
 {
-    class LeatherArmor
+    public class LeatherArmor
     {
         private int attack;
         public int Attack
