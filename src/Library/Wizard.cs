@@ -3,13 +3,14 @@ using System.Collections;
 
 namespace MiddleEarth
 {
-    class Wizard
+    public class Wizard
     {
         public FireSpear FireSpear{get; set;}
 
         public MagicWand MagicWand{get; set;}
 
-        public SpellBook SpellBook{get; set;}
+        public Spellbook SpellBook{get; set;}
+
         private string name;
         public string Name
         {
@@ -46,7 +47,7 @@ namespace MiddleEarth
         }
         public Wizard(string name)
         {
-            this.Health = 50;
+            this.Health = 80;
             this.Name = name;
         }
 

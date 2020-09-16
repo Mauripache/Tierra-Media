@@ -1,6 +1,6 @@
 namespace MiddleEarth
 {
-    class FireSpear
+    public class FireSpear
     {
         private int attack;
         public int Attack

@@ -1,6 +1,6 @@
 namespace MiddleEarth
 {
-    class MagicWand
+    public class MagicWand
     {
         private int attack;
         public int Attack
