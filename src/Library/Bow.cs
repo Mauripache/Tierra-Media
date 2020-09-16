@@ -1,6 +1,6 @@
 namespace MiddleEarth
 {
-    class Bow
+    public class Bow
     {
         private int attack;
         public int Attack
