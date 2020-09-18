@@ -1,6 +1,6 @@
 namespace MiddleEarth
 {
-    class GoldenArmor
+    public class GoldenArmor
     {
         private int attack;
         public int Attack
