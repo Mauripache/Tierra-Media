@@ -7,7 +7,6 @@ namespace MiddleEarth
     {
         public Axe Axe{get;set;}
         public GoldenArmor Armor{get;set;}
-        public ArrayList Items {get;set;}
         private string name;
         private string Name 
         { 
