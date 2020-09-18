@@ -13,6 +13,10 @@ namespace Test.Library
         int caseWrongDefense = 0;
 
         [Test]
+
+        /*
+            Es necesario testear que la implementación del setter del atributo Attack esté funcionando correctamente. 
+        */
         public void MagicWandCorrectAttack()
         {
             MagicWand wand = new MagicWand(30, 0);
@@ -21,6 +25,10 @@ namespace Test.Library
         }
 
         [Test]
+
+        /*
+            Es necesario testear que la implementación del setter del atributo Attack y su validación estén funcionando correctamente. 
+        */
         public void MagicWandIncorrectAttack()
         {
             MagicWand wand = new MagicWand(50, 0);
@@ -29,6 +37,10 @@ namespace Test.Library
         }
 
         [Test]
+
+        /*
+            Es necesario testear que la implementación del setter del atributo Defense esté funcionando correctamente. 
+        */
         public void MagicWandCorrectDefense()
         {
             MagicWand wand = new MagicWand(70, 5);
@@ -37,6 +49,10 @@ namespace Test.Library
         }
 
         [Test]
+
+        /*
+            Es necesario testear que la implementación del setter del atributo Defense y su validación estén funcionando correctamente. 
+        */
         public void MagicWandIncorrectDefense()
         {
             MagicWand wand = new MagicWand(50, 0);
