@@ -1,6 +1,6 @@
 namespace MiddleEarth
 {
-    public class Bow
+    class Axe
     {
         private int attack;
         public int Attack
@@ -40,7 +40,7 @@ namespace MiddleEarth
                 }
             }
         }
-        public Bow(int newAttack, int newDefense)
+        public Axe(int newAttack, int newDefense)
         {
             this.Attack = newAttack;
             this.Defense = newDefense;

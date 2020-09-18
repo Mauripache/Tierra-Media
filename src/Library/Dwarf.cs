@@ -1,14 +1,15 @@
 using System;
+using System.Collections;
 
 namespace MiddleEarth
 {
-    public class Elf
+    class Dwarf
     {
-        public Bow Bow{get;set;}
-        public LeatherArmor Armor{get;set;}
+        public Axe Axe{get;set;}
+        public GoldenArmor Armor{get;set;}
         private string name;
-        public string Name
-        {
+        private string Name 
+        { 
             get
             {
                 return this.name;
@@ -21,9 +22,9 @@ namespace MiddleEarth
                 }
             }
         }
-        private int health;
-        public int Health
-        {
+        public int health;
+        public int Health 
+        { 
             get
             {
                 return this.health;
@@ -40,20 +41,20 @@ namespace MiddleEarth
                 }
             }
         }
-        public Elf(string name)
+        public Dwarf(string name)
         {
             this.Health = 100;
             this.Name = name;
         }
-        public void ChangeWeapon(Bow bow)
+        public void ChangeWeapon(Axe axe)
         {
-            this.Bow = bow;
+            this.Axe = axe;
         }
         public void RemoveWeapon()
         {
-            this.Bow = null;
+            this.Axe = null;
         }
-        public void ChangeArmor(LeatherArmor armor)
+        public void ChangeArmor(GoldenArmor armor)
         {
             this.Armor = armor;
         }
@@ -63,12 +64,12 @@ namespace MiddleEarth
         }
         public void Heal()
         {
-            Elf newElf = new Elf("Alive Elf");
-            this.Health = newElf.Health;
+            Dwarf newDwarf = new Dwarf("Alive Dwarf");
+            this.Health = newDwarf.Health;
         }
         public int GetAttack()
         {
-            return this.Bow.Attack;
+            return this.Axe.Attack;
         }
         public void ReceiveDamage(int damage)
         {
