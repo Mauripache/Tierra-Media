@@ -63,7 +63,7 @@ namespace MiddleEarth
         {
             this.MagicWand = wand;
         }
-        public void RemoveWand(MagicWand wand)
+        public void RemoveWand()
         {
             this.MagicWand = null;
         }
