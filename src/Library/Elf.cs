@@ -2,6 +2,19 @@ using System;
 
 namespace MiddleEarth
 {
+    /*
+        Justificación de implementación de parte 3 (Cobrando Poder),
+        para todos los personajes:
+        Se utilizó el patrón expert para tomar la decisión de colocar los métodos
+        de obtener ataque y defensa en esta misma clase, ya que es ella la que conoce
+        que items posee el personaje. También se utilizó el patrón expert para incluír
+        los métodos de curar al personaje y de recibir daño, ya que es el que conoce
+        su propia cantidad de vida y su armadura.
+        Si bien podrían haber varias razones de cambio de esta clase como (por ejemplo
+        agregar items, cambiar el calculo del daño, cambiar la cantidad de vida) se 
+        priorizó el uso del patrón expert ya que hace mas coherente a esta clase.
+        Todo esto siendo para la actual implementación con nuestros conocimientos actuales.
+    */
     public class Elf
     {
         public Bow Bow{get;set;}
