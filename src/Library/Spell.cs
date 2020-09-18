@@ -2,7 +2,7 @@ using System;
 
 namespace MiddleEarth
 {
-    class Spell
+    public class Spell
     {
         private string name;
         public string Name

@@ -1,6 +1,6 @@
 namespace MiddleEarth
 {
-    class Spellbook
+    public class Spellbook
     {
         public Spell Spell{get;set;}
         public Spellbook(Spell spell)
