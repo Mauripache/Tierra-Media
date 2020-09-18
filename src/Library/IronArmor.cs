@@ -2,6 +2,12 @@ namespace MiddleEarth
 {
     public class IronArmor
     {
+        /*
+            Esta clase solo tiene la responsabilidad de conocer el ataque y la defensa de
+            un item en especifico, también tiene implementado un constructor para dicho item.
+            De esta manera estaría cumpliendo con el SRP ya que su único motivo de cambio sería
+            que cambiaran sus propiedades o la validación de las mismas.
+        */
         private int attack;
         public int Attack
         {
