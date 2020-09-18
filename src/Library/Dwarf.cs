@@ -3,12 +3,12 @@ using System.Collections;
 
 namespace MiddleEarth
 {
-    class Dwarf
+    public class Dwarf
     {
         public Axe Axe{get;set;}
         public GoldenArmor Armor{get;set;}
         private string name;
-        private string Name 
+        public string Name 
         { 
             get
             {

@@ -1,6 +1,6 @@
 namespace MiddleEarth
 {
-    class Axe
+    public class Axe
     {
         private int attack;
         public int Attack
